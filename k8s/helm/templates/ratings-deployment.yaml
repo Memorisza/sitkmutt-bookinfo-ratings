@@ -4,7 +4,7 @@ metadata:
   name: {{ .Release.Name }}
   namespace: {{ .Values.ratings.namespace }}
   labels:
-    app: {{ .Release.Name }}
+    app: {{ .Release.Name }} 
 spec:
   replicas: {{ .Values.ratings.replicas }}
   selector:
